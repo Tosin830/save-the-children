@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gala Event Registration</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <nav>
+      <a href="fbla.html">HOME</a>
+      
+      
+      <a href="aboutgala.html">About Gala</a>
+      <a href="register.html">Register for Gala</a>
+      <a href="donate.html">Donate</a>
+      <a href="sources.html">Sources</a>
+      </nav>
+  
+  <header>
+    <h1>Gala Event Registration</h1>
+  </header>
+
+  <main>
+    <section class="registration-form">
+      <h2>Register for the Gala</h2>
+      <form id="galaRegistrationForm" onsubmit="return submitRegistrationForm()">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br>
+
+        <label for="number-of-guests">Number of Guests:</label><br>
+        <input type="number" id="number-of-guests" name="number-of-guests" min="1" max="10"><br>
+
+        <label for="meal-preference">Meal Preference:</label><br>
+        <select id="meal-preference" name="meal-preference">
+          <option value="none">None</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="vegan">Vegan</option>
+          <option value="gluten-free">Gluten-Free</option>
+          
+        </select><br>
+
+        <input type="submit" value="Register">
+      </form>
+    </section>
+  </main>
+
+  <script>
+    function submitRegistrationForm() {
+      // Implement submission logic here, for example, sending data to a server
+      alert("Thank you for registering!"); // Display an alert box
+      return false; // To prevent actual form submission
+    }
+  </script>
+</body>
+</html>

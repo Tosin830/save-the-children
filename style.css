@@ -1,0 +1,72 @@
+/* Specific header styles for home page */
+.home-header {
+    background-image: url('image/hmm.jpg'); /* Make sure this path is correct */
+    background-size: cover;
+    background-position: center;
+    padding: 360px 0; /* Adjusted to provide padding only at the top and bottom */
+    text-align: center;
+    color: red; /* If you want to keep the heading color as red */
+}
+
+/* Common header styles (for all headers unless overridden by specific classes) */
+header {
+    background-color: #ffffff; /* This will be the background for headers without the .home-header class */
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em; /* Adjust the size as needed */
+    margin: 0;
+    padding: 10px; /* Adds some space inside the header */
+    color: #000000; /* Default text color for headers */
+    text-align: top;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: black;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #f0f0f0; /* Slightly lighter grey on hover */
+    text-decoration: underline;
+}
+
+/* You can add other styles below for the body, main content, footer, etc. */
+
+/* Example body style */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b7b5ad; /* Background color for the entire page */
+}
+
+/* Main content style */
+main {
+    padding: 15px;
+}
+
+/* Section style */
+section {
+    margin-bottom: 20px;
+}
+
+/* Paragraph text style */
+p {
+    line-height: 1.6; /* Makes text easier to read with more space between lines */
+    color: rgb(32, 31, 31); /* Default text color */
+}
+
+/* Add any additional styles you need for other elements */
+
+    

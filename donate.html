@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Donate - Save the Children</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="fbla.html">HOME</a>
+    
+   
+    <a href="aboutgala.html">About Gala</a>
+    <a href="register.html">Register for Gala</a>
+    <a href="donate.html">Donate</a>
+    <a href="sources.html">Sources</a>
+  </nav>
+  <header>
+    <h1>Donate to Save the Children</h1>
+  </header>
+
+  <div id="main-content">
+    <main>
+      <section class="donation-form">
+        <h2>Make a Donation</h2>
+        <form id="donationForm" onsubmit="return submitDonationForm()">
+          <!-- Fixed Amount Options -->
+          <input type="radio" id="amount1" name="donation-amount" value="10">
+          <label for="amount1">$10</label><br>
+          <input type="radio" id="amount2" name="donation-amount" value="20">
+          <label for="amount2">$20</label><br>
+          <input type="radio" id="amount3" name="donation-amount" value="50">
+          <label for="amount3">$50</label><br>
+          <input type="radio" id="amount4" name="donation-amount" value="100">
+          <label for="amount4">$100</label><br>
+
+          <!-- Custom Amount Option -->
+          <input type="radio" id="amount5" name="donation-amount" value="custom">
+          <label for="amount5">Other</label>
+          <input type="text" id="custom-amount" name="custom-amount" disabled><br>
+
+          <input type="submit" value="Donate">
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Enable or disable custom amount input based on selection
+    document.getElementById('donationForm').addEventListener('change', function (e) {
+      var customAmountInput = document.getElementById('custom-amount');
+      if (e.target.value === 'custom') {
+        customAmountInput.disabled = false;
+      } else {
+        customAmountInput.disabled = true;
+      }
+    });
+
+    function submitDonationForm() {
+      document.getElementById('main-content').innerHTML = '<h1>Thank you for your donation!</h1>';
+      return false; // Prevent actual form submission
+    }
+  </script>
+</body>
+</html>
+
